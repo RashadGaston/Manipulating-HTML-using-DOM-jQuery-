@@ -13,13 +13,13 @@ $num2button.click(function () {
 });
 
 //Question 3
-let $div = $("#div1");
-$div.hover(
+let $numdiv = $("#number3 div");
+$num3Div.hover(
   function () {
-    $div.style.backgroundColor = "Black";
+    $num3Div.css("backgroundColor", "Black");
   },
   function () {
-    $div.style.backgroundColor = "Yellow";
+    $num3Diiv.css("backgroundColor", "Yellow");
   }
 );
 
@@ -42,14 +42,14 @@ $button5.click(function () {
 });
 
 //Queston 6
-let $button6 = $("#btn6");
+let $num6Btn = $("number6-button");
+let $num6ul = $("number6-ul")
+let $friends = ["John" , "Jacob", "Jingeheimer", "Schmidt", "Bobo", "Janono", "Cobo", "Sayso", "Hellno", "Boyno",];
 let counter = 0;
-let $;
-let $ul = $("ul6");
-let $friends = ["John" , "Jacob", "Jingeheimer", "Schmidt", "Bobo", "Janono", "Cobo", "Sayso", "Hellno", "Boyno",
-];
-$($button6).click(function () {
-let 
-$friends[counter]
+$num6Btn.on("click", function () {
+let li = $("<li></li>");
+li.text (freinds[counter]);
+$num6ul.append(li);
 counter++
 });
+
